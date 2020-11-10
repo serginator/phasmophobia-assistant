@@ -6,23 +6,23 @@ class Assistant extends Component {
   state = {
     evidence: [
       {
-        type: 'EMF Level 5',
+        type: 'EMF Nivel 5', // EMF Level 5
         icon: '/emf.png'
       },
       {
-        type: 'Fingerprints',
+        type: 'Huellas dactilares', // Fingerprints
         icon: '/fingerprint.png'
       },
       {
-        type: 'Freezing Temperatures',
+        type: 'Temperaturas bajo cero', // Freezing temperatures
         icon: '/freezingTemps.png'
       },
       {
-        type: 'Ghost Orbs',
+        type: 'Orbes', // Ghost Orbs
         icon: '/ghostOrb.png'
       },
       {
-        type: 'Ghost Writing',
+        type: 'Escritura fantasma', // Ghost Writing
         icon: '/ghostWriting.png'
       },
       {
@@ -32,135 +32,135 @@ class Assistant extends Component {
     ],
     ghosts: [
       {
-        type: 'Spirit',
+        type: 'Espíritu', // Spirit
         evidence: [
-          'Fingerprints',
-          'Ghost Writing',
+          'Huellas dactilares',
+          'Escritura fantasma',
           'Spirit Box',
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'las varillas de incienso provocan que no ataque por un largo periodo de tiempo',
+        strenght: 'ninguna',
         tips: '',
       },
       {
-        type: 'Wraith',
+        type: 'Espectro', // Wraith
         evidence: [
-          'Fingerprints',
-          'Freezing Temperatures',
+          'Huellas dactilares',
+          'Temperaturas bajo cero',
           'Spirit Box'
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'tiene reacciones tóxicas al entrar en contacto con la sal',
+        strenght: 'nunca deja pisadas rastreables por el suelo',
         tips: '',
       },
       {
-        type: 'Phantom',
+        type: 'Ente', // Phantom
         evidence: [
-          'EMF Level 5',
-          'Freezing Temperatures',
-          'Ghost Orbs',
+          'EMF Nivel 5',
+          'Temperaturas bajo cero',
+          'Orbes',
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'fotografiar un ente hará que desaparezca temporalmente',
+        strenght: 'mirar a un ente hace que tu cordura disminuya considerablemente',
         tips: '',
       },
       {
         type: 'Poltergeist',
         evidence: [
           'Spirit Box',
-          'Fingerprints',
-          'Ghost Orbs',
+          'Huellas dactilares',
+          'Orbes',
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'es prácticamente inútil en una habitación vacía',
+        strenght: 'puede lanzar muchos objetos a la vez',
         tips: '',
       },
       {
         type: 'Banshee',
         evidence: [
-          'EMF Level 5',
-          'Fingerprints',
-          'Freezing Temperatures',
+          'EMF Nivel 5',
+          'Huellas dactilares',
+          'Temperaturas bajo cero',
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'temen al crucifijo haciendo que sean menos agresivas si se encuentran cerca de uno',
+        strenght: 'sólo pueden marcar a un jugador una vez',
         tips: '',
       },
       {
         type: 'Jinn',
         evidence: [
-          'Ghost Orbs',
-          'EMF Level 5',
+          'Orbes',
+          'EMF Nivel 5',
           'Spirit Box'
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'cuando el cuadro eléctrico está apagado no puede usar su habilidad',
+        strenght: 'viaja más rápido cuando mayor es la distancia enter él y la víctima',
         tips: '',
       },
       {
-        type: 'Mare',
+        type: 'Pesadilla', // Mare
         evidence: [
-          'Ghost Orbs',
-          'Freezing Temperatures',
+          'Orbes',
+          'Temperaturas bajo cero',
           'Spirit Box'
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'encender las luces hará que una pesadilla tenga menos probabilidades de atacar',
+        strenght: 'tiene más probabilidades de atacar si está a oscuras',
         tips: '',
       },
       {
         type: 'Revenant',
         evidence: [
-          'EMF Level 5',
-          'Fingerprints',
-          'Ghost Writing'
+          'EMF Nivel 5',
+          'Huellas dactilares',
+          'Escritura fantasma'
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'esconderte de un revenant hará que se mueva muy despacio',
+        strenght: 'se desplaza más rápido si va tras su presa',
         tips: '',
       },
       {
-        type: 'Shade',
+        type: 'Sombra', // Shade
         evidence: [
-          'EMF Level 5',
-          'Ghost Writing',
-          'Ghost Orbs'
+          'EMF Nivel 5',
+          'Escritura fantasma',
+          'Orbes'
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'no atacará si varias personas se encuentran juntas',
+        strenght: 'es muy difícil de encontrar ya que es muy tímida',
         tips: '',
       },
       {
-        type: 'Demon',
+        type: 'Demonio', // Demon
         evidence: [
-          'Freezing Temperatures',
-          'Ghost Writing',
+          'Temperaturas bajo cero',
+          'Escritura fantasma',
           'Spirit Box'
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'hacer preguntas existosas a través de la Ouija hará que la cordura no baje',
+        strenght: 'atacan de manera más frecuente que otros fantasmas',
         tips: '',
       },
       {
         type: 'Yurei',
         evidence: [
-          'Ghost Orbs',
-          'Ghost Writing',
-          'Freezing Temperatures'
+          'Orbes',
+          'Escritura fantasma',
+          'Temperaturas bajo cero'
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'usar varillas de incienso en su habitación hará que no se pasee por ahí en un gran periodo de tiempo',
+        strenght: 'son famosos por tener un gran impacto sobre la cordura de los individuos',
         tips: '',
       },
       {
         type: 'Oni',
         evidence: [
-          'EMF Level 5',
-          'Ghost Writing',
+          'EMF Nivel 5',
+          'Escritura fantasma',
           'Spirit Box'
         ],
-        weakness: '',
-        strenght: '',
+        weakness: 'al ser más activos por naturaleza son más fáciles de encontrar e identificar',
+        strenght: 'son más activos cuanta más gente haya alrededor de él y tiene la capacidad de lanzar objetos a grandes velocidades',
         tips: '',
       },
     ],
@@ -247,7 +247,7 @@ class Assistant extends Component {
             />
           ))}
         </div>
-        <p>Possible Ghosts:</p>
+        <p>Fantasmas posibles:</p>
         <div className="row" onMouseLeave={this.resetHightlight}>
           {filteredGhosts.map(g => (
             <Ghost key={g.type} {...g} handleMouseOver={this.handleGhostMouseOver} />
